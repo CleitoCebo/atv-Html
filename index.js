@@ -1,9 +1,9 @@
-// pacote "http" -> requisições e respostas do usuário
+// const para o pacote http
 const http = require("http");
 
 // const para criar o servidor http
 const server = http.createServer((requisicao, resposta) => {
-  // configurando a resposta como se fosse uma página HTML
+  // configurando a resposta para ser um HTML
   resposta.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
 
   // const para obter a url da pag 
